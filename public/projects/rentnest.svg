@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="625" viewBox="0 0 1000 625" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="55" y1="22" x2="929" y2="603" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F5FF"/>
+      <stop offset="1" stop-color="#E9ECFF"/>
+    </linearGradient>
+    <linearGradient id="house" x1="459" y1="203" x2="809" y2="417" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DFE7FA"/>
+      <stop offset="1" stop-color="#B4C5EA"/>
+    </linearGradient>
+    <filter id="shadow" x="510" y="171" width="376" height="345" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3730A3" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="625" fill="url(#bg)"/>
+  <rect x="42" y="34" width="916" height="557" rx="20" fill="#fff" stroke="#DFE3F7"/>
+  <path d="M42 54a20 20 0 0 1 20-20h876a20 20 0 0 1 20 20v52H42V54Z" fill="#fff"/>
+  <path d="M72 53h18v18H72z" rx="5" fill="#645BEA"/>
+  <path d="M77 62h8m-4-4 4 4-4 4" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <text x="101" y="70" fill="#22243B" font-family="Arial,sans-serif" font-size="22" font-weight="700">RentNest</text>
+  <text x="615" y="67" fill="#73758E" font-family="Arial,sans-serif" font-size="13">Explore</text>
+  <text x="701" y="67" fill="#73758E" font-family="Arial,sans-serif" font-size="13">How it works</text>
+  <rect x="827" y="47" width="100" height="37" rx="10" fill="#645BEA"/>
+  <text x="850" y="70" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700">List a home</text>
+  <rect x="42" y="106" width="916" height="453" fill="#F8F8FF"/>
+  <rect x="78" y="141" width="117" height="25" rx="12.5" fill="#ECEBFF"/>
+  <circle cx="94" cy="153" r="4" fill="#645BEA"/>
+  <text x="107" y="157" fill="#5146C8" font-family="Arial,sans-serif" font-size="11" font-weight="700">FIND YOUR PLACE</text>
+  <text x="78" y="220" fill="#20213A" font-family="Arial,sans-serif" font-size="43" font-weight="700">A place to call</text>
+  <text x="78" y="269" fill="#20213A" font-family="Arial,sans-serif" font-size="43" font-weight="700">your <tspan fill="#645BEA">own.</tspan></text>
+  <text x="80" y="309" fill="#77788F" font-family="Arial,sans-serif" font-size="15">Thoughtful homes for wherever life</text>
+  <text x="80" y="332" fill="#77788F" font-family="Arial,sans-serif" font-size="15">takes you next.</text>
+  <rect x="78" y="358" width="390" height="60" rx="13" fill="#fff" stroke="#E5E5F3"/>
+  <circle cx="106" cy="388" r="12" fill="#F0EFFF"/>
+  <path d="M101 386c0-3 2-5 5-5s5 2 5 5c0 5-5 10-5 10s-5-5-5-10Z" stroke="#645BEA" stroke-width="1.5"/>
+  <text x="132" y="382" fill="#9B9BAE" font-family="Arial,sans-serif" font-size="10">LOCATION</text>
+  <text x="132" y="401" fill="#33344B" font-family="Arial,sans-serif" font-size="12" font-weight="700">Where do you want to live?</text>
+  <rect x="78" y="434" width="165" height="45" rx="11" fill="#645BEA"/>
+  <text x="105" y="462" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Explore homes</text>
+  <path d="m226 451 6 6-6 6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <g filter="url(#shadow)">
+    <rect x="546" y="192" width="312" height="282" rx="19" fill="#fff"/>
+    <rect x="562" y="208" width="280" height="169" rx="13" fill="url(#house)"/>
+    <path d="m606 293 96-70 98 70v65H606v-65Z" fill="#F8FAFC"/>
+    <path d="m593 294 109-80 111 80" stroke="#6E74A9" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+    <rect x="628" y="298" width="48" height="67" rx="4" fill="#B8C5E0"/>
+    <rect x="690" y="288" width="37" height="34" rx="3" fill="#C9D8EE"/>
+    <path d="M697 305h23m-11-11v22" stroke="#fff" stroke-width="3"/>
+    <rect x="742" y="287" width="37" height="34" rx="3" fill="#C9D8EE"/>
+    <path d="M749 304h23m-11-11v22" stroke="#fff" stroke-width="3"/>
+    <circle cx="802" cy="226" r="20" fill="#fff"/>
+    <path d="M802 216c-5-6-14-2-12 6l12 13 12-13c2-8-7-12-12-6Z" fill="#F3798B"/>
+    <text x="581" y="410" fill="#292A41" font-family="Arial,sans-serif" font-size="14" font-weight="700">Sunny 2-bed apartment</text>
+    <text x="581" y="433" fill="#85869B" font-family="Arial,sans-serif" font-size="11">Dhaka, Bangladesh · Furnished</text>
+    <text x="581" y="458" fill="#5146C8" font-family="Arial,sans-serif" font-size="15" font-weight="700">$ 420</text>
+    <text x="632" y="458" fill="#85869B" font-family="Arial,sans-serif" font-size="10">/ month</text>
+    <rect x="762" y="440" width="64" height="22" rx="11" fill="#F2F1FF"/>
+    <text x="777" y="455" fill="#645BEA" font-family="Arial,sans-serif" font-size="9" font-weight="700">AVAILABLE</text>
+  </g>
+  <circle cx="495" cy="180" r="4" fill="#8B83F0" fill-opacity=".7"/>
+  <circle cx="486" cy="481" r="3" fill="#8B83F0" fill-opacity=".5"/>
+</svg>

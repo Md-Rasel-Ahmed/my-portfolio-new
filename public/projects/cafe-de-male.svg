@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="625" viewBox="0 0 1000 625" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="100" y1="15" x2="934" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B1D1A"/>
+      <stop offset="1" stop-color="#4A2820"/>
+    </linearGradient>
+    <linearGradient id="food" x1="649" y1="250" x2="855" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6C76D"/>
+      <stop offset="1" stop-color="#E88948"/>
+    </linearGradient>
+    <filter id="shadow" x="565" y="170" width="351" height="355" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="15" stdDeviation="18" flood-color="#110C0A" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="625" fill="url(#bg)"/>
+  <circle cx="788" cy="306" r="237" fill="#F59E0B" fill-opacity=".07"/>
+  <rect x="42" y="34" width="916" height="557" rx="20" fill="#241A18" stroke="#5A3930"/>
+  <path d="M42 54a20 20 0 0 1 20-20h876a20 20 0 0 1 20 20v52H42V54Z" fill="#241A18"/>
+  <path d="M73 48h27v27H73z" rx="8" fill="#F2A34A"/>
+  <path d="M80 57h13m-11 5h9m-7 5h5" stroke="#3A2119" stroke-linecap="round" stroke-width="2"/>
+  <text x="111" y="70" fill="#FFF7ED" font-family="Arial,sans-serif" font-size="20" font-weight="700">Cafe-De Male</text>
+  <text x="609" y="67" fill="#C9B6A6" font-family="Arial,sans-serif" font-size="13">Our menu</text>
+  <text x="695" y="67" fill="#C9B6A6" font-family="Arial,sans-serif" font-size="13">Our story</text>
+  <rect x="827" y="47" width="100" height="37" rx="10" fill="#F2A34A"/>
+  <text x="854" y="70" fill="#392117" font-family="Arial,sans-serif" font-size="12" font-weight="700">Order now</text>
+  <rect x="42" y="106" width="916" height="453" fill="#2A1D19"/>
+  <rect x="77" y="145" width="120" height="25" rx="12.5" fill="#493025"/>
+  <circle cx="94" cy="157" r="4" fill="#F2A34A"/>
+  <text x="107" y="161" fill="#F5B866" font-family="Arial,sans-serif" font-size="11" font-weight="700">GOOD FOOD, GOOD MOOD</text>
+  <text x="77" y="226" fill="#FFF8EF" font-family="Georgia,serif" font-size="47" font-weight="700">A little taste</text>
+  <text x="77" y="278" fill="#FFF8EF" font-family="Georgia,serif" font-size="47" font-weight="700">of <tspan fill="#F2A34A">happiness.</tspan></text>
+  <text x="80" y="320" fill="#C9B6A6" font-family="Arial,sans-serif" font-size="15">Comfort food, made fresh and served with</text>
+  <text x="80" y="343" fill="#C9B6A6" font-family="Arial,sans-serif" font-size="15">a little extra love. Your table is waiting.</text>
+  <rect x="77" y="372" width="140" height="46" rx="11" fill="#F2A34A"/>
+  <text x="101" y="400" fill="#392117" font-family="Arial,sans-serif" font-size="13" font-weight="700">Browse the menu</text>
+  <path d="m201 389 6 6-6 6" stroke="#392117" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <rect x="77" y="442" width="38" height="38" rx="12" fill="#493025"/>
+  <path d="M89 462c5-8 11-8 16 0m-14-7h12" stroke="#F2A34A" stroke-linecap="round" stroke-width="1.8"/>
+  <text x="127" y="458" fill="#F7E8D9" font-family="Arial,sans-serif" font-size="12" font-weight="700">Freshly prepared</text>
+  <text x="127" y="475" fill="#A99281" font-family="Arial,sans-serif" font-size="10">Made to order, every time</text>
+  <g filter="url(#shadow)">
+    <rect x="590" y="194" width="302" height="288" rx="22" fill="#3A2922" stroke="#6A4430"/>
+    <circle cx="741" cy="325" r="96" fill="#4B2E21"/>
+    <circle cx="741" cy="325" r="78" fill="#F4E3C5"/>
+    <circle cx="741" cy="325" r="63" fill="url(#food)"/>
+    <path d="M698 320c19-37 65-47 91-9-18 29-56 46-91 9Z" fill="#F7DC9D"/>
+    <path d="M706 318c14-19 40-28 62-19" stroke="#69A15C" stroke-linecap="round" stroke-width="9"/>
+    <circle cx="722" cy="337" r="9" fill="#C94F37"/>
+    <circle cx="756" cy="352" r="8" fill="#C94F37"/>
+    <circle cx="770" cy="310" r="7" fill="#F8F0D8"/>
+    <path d="M684 351c24 25 71 31 111-1" stroke="#E77D3B" stroke-linecap="round" stroke-width="6"/>
+    <rect x="704" y="423" width="74" height="20" rx="10" fill="#66422E"/>
+    <text x="721" y="437" fill="#F3C078" font-family="Arial,sans-serif" font-size="9" font-weight="700">CHEF'S PICK</text>
+    <text x="664" y="466" fill="#FFF4E6" font-family="Arial,sans-serif" font-size="13" font-weight="700">Roasted garden pasta</text>
+    <text x="823" y="466" fill="#F2A34A" font-family="Arial,sans-serif" font-size="13" font-weight="700">$14</text>
+  </g>
+  <circle cx="542" cy="196" r="4" fill="#F2A34A" fill-opacity=".7"/>
+  <circle cx="540" cy="460" r="3" fill="#F2A34A" fill-opacity=".6"/>
+</svg>

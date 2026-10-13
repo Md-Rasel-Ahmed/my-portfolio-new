@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/context/ThemeProvider";
+import BackgroundEffects from "@/components/BackgroundEffects";
+import PageLoader from "@/components/PageLoader";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -45,7 +47,11 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="flex min-h-full flex-col bg-background text-foreground">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <BackgroundEffects />
+          <PageLoader />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

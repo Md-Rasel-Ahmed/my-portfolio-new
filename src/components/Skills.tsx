@@ -15,8 +15,8 @@ export default function Skills() {
       <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
         <SectionHeading
           eyebrow="Tech Stack"
-          title="My skill arsenal"
-          subtitle="The technologies I use daily to design, build, and ship production-ready applications."
+          title="Tools behind the work"
+          subtitle="A practical toolkit for building thoughtful interfaces and dependable web applications."
         />
 
         <motion.div
@@ -24,45 +24,33 @@ export default function Skills() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
-          className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-3"
+          className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4"
         >
-          {skills.map(({ name, icon: Icon, level, color }) => (
+          {skills.map(({ name, icon: Icon, color }, index) => (
             <motion.div
               key={name}
               variants={fadeUp}
               whileHover={{ y: -6 }}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur transition-colors hover:border-white/20"
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.035] p-4 backdrop-blur transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07] sm:p-5"
             >
               <div
-                className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-30"
+                className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-20"
                 style={{ background: color }}
               />
-              <div className="flex items-center gap-4">
+              <div className="mb-5 flex items-start justify-between">
                 <div
-                  className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/5 transition-transform duration-300 group-hover:scale-110"
+                  className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 transition-transform duration-300 group-hover:scale-110"
                   style={{ color }}
                 >
                   <Icon className="h-6 w-6" />
                 </div>
-                <div className="min-w-0 flex-1">
-                  <h3 className="font-semibold text-foreground">{name}</h3>
-                  <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-                      className="h-full rounded-full"
-                      style={{
-                        background: `linear-gradient(to right, ${color}, ${color}66)`,
-                      }}
-                    />
-                  </div>
-                  <p className="mt-1 text-xs font-medium text-foreground/40">
-                    {level}% proficiency
-                  </p>
-                </div>
+                <span className="font-mono text-xs text-foreground/25">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
               </div>
+              <h3 className="text-sm font-semibold text-foreground sm:text-base">
+                {name}
+              </h3>
             </motion.div>
           ))}
         </motion.div>

@@ -11,7 +11,7 @@ const quickLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/10 bg-white/5 backdrop-blur">
+    <footer className="relative z-10 border-t border-white/10 bg-white/5 backdrop-blur">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-5 py-10 sm:px-6 md:flex-row md:justify-between">
         <div className="flex flex-col items-center gap-2 md:items-start">
           <a href="#home" className="text-xl font-bold tracking-tight">

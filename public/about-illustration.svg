@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="89" y1="31" x2="827" y2="718" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101B30"/>
+      <stop offset="1" stop-color="#211238"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="266" y1="190" x2="605" y2="453" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F3150"/>
+      <stop offset="1" stop-color="#17172E"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="103" y1="496" x2="792" y2="636" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#273657"/>
+      <stop offset="1" stop-color="#20213F"/>
+    </linearGradient>
+    <linearGradient id="mug" x1="703" y1="422" x2="773" y2="519" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <radialGradient id="ambient" cx="0" cy="0" r="1" gradientTransform="matrix(0 287 -344 0 450 351)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="720" rx="32" fill="url(#bg)"/>
+  <rect width="900" height="720" rx="32" fill="url(#ambient)"/>
+  <circle cx="143" cy="153" r="4" fill="#67E8F9" fill-opacity=".8"/>
+  <circle cx="761" cy="154" r="5" fill="#C4B5FD" fill-opacity=".8"/>
+  <circle cx="783" cy="300" r="3" fill="#67E8F9" fill-opacity=".8"/>
+  <circle cx="117" cy="352" r="3" fill="#C4B5FD" fill-opacity=".8"/>
+  <path d="m728 115 5 12 12 5-12 5-5 12-5-12-12-5 12-5 5-12Z" fill="#A78BFA" fill-opacity=".8"/>
+  <rect x="220" y="142" width="460" height="332" rx="23" fill="#0B1020" stroke="#A78BFA" stroke-opacity=".35" stroke-width="2"/>
+  <rect x="236" y="158" width="428" height="294" rx="13" fill="url(#screen)"/>
+  <path d="M249 158h402a13 13 0 0 1 13 13v29H236v-29a13 13 0 0 1 13-13Z" fill="#10172A"/>
+  <circle cx="254" cy="180" r="4" fill="#FB7185"/>
+  <circle cx="270" cy="180" r="4" fill="#FBBF24"/>
+  <circle cx="286" cy="180" r="4" fill="#34D399"/>
+  <rect x="263" y="225" width="150" height="10" rx="5" fill="#67E8F9" fill-opacity=".8"/>
+  <rect x="263" y="248" width="255" height="7" rx="3.5" fill="#E2E8F0" fill-opacity=".65"/>
+  <rect x="263" y="264" width="207" height="7" rx="3.5" fill="#E2E8F0" fill-opacity=".35"/>
+  <rect x="263" y="293" width="101" height="31" rx="9" fill="#7C3AED" fill-opacity=".8"/>
+  <path d="m289 308 8 0m-4-4 4 4-4 4" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <rect x="500" y="222" width="130" height="179" rx="14" fill="#101729" stroke="#fff" stroke-opacity=".1"/>
+  <circle cx="565" cy="276" r="31" fill="#7C3AED" fill-opacity=".2"/>
+  <path d="M565 251c-14 0-22 11-22 25v12c0 17 9 28 22 28s22-11 22-28v-12c0-14-8-25-22-25Z" fill="#E6B394"/>
+  <path d="M543 282c-5-27 6-44 25-44 19 0 28 18 20 41-7-4-12-11-15-19-7 8-18 12-30 13v9Z" fill="#25233B"/>
+  <path d="M530 359c4-24 17-37 35-37s31 13 35 37h-70Z" fill="#22D3EE"/>
+  <rect x="531" y="369" width="68" height="6" rx="3" fill="#E2E8F0" fill-opacity=".55"/>
+  <rect x="539" y="384" width="52" height="5" rx="2.5" fill="#E2E8F0" fill-opacity=".25"/>
+  <path d="M195 474h510l83 67H112l83-67Z" fill="url(#desk)" stroke="#A78BFA" stroke-opacity=".25" stroke-width="2"/>
+  <path d="m359 476-19 24h221l-19-24H359Z" fill="#11182A"/>
+  <rect x="106" y="538" width="690" height="15" rx="7.5" fill="#0B1020"/>
+  <rect x="142" y="570" width="91" height="53" rx="15" fill="#141A2B" stroke="#fff" stroke-opacity=".1"/>
+  <rect x="156" y="582" width="62" height="5" rx="2.5" fill="#67E8F9" fill-opacity=".75"/>
+  <rect x="156" y="595" width="46" height="5" rx="2.5" fill="#E2E8F0" fill-opacity=".35"/>
+  <rect x="678" y="439" width="66" height="79" rx="12" fill="url(#mug)"/>
+  <path d="M744 455h10a15 15 0 0 1 0 30h-10" stroke="#C4B5FD" stroke-width="7"/>
+  <path d="M699 421c-6-9 8-13 3-23m21 23c-6-9 8-13 3-23" stroke="#E2E8F0" stroke-linecap="round" stroke-opacity=".45" stroke-width="3"/>
+  <path d="m449 474-24 29h50l-24-29h-2Z" fill="#67E8F9" fill-opacity=".35"/>
+</svg>

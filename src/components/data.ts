@@ -14,7 +14,6 @@ import {
 export interface Skill {
   name: string;
   icon: LucideIcon;
-  level: number;
   color: string;
 }
 
@@ -22,55 +21,46 @@ export const skills: Skill[] = [
   {
     name: "React",
     icon: Atom,
-    level: 92,
     color: "#22d3ee",
   },
   {
     name: "Node.js",
     icon: Server,
-    level: 88,
     color: "#4ade80",
   },
   {
     name: "Express",
     icon: Braces,
-    level: 85,
     color: "#a3a3a3",
   },
   {
     name: "MongoDB",
     icon: Database,
-    level: 84,
     color: "#4ade80",
   },
   {
     name: "TypeScript",
     icon: Type,
-    level: 82,
     color: "#60a5fa",
   },
   {
     name: "Next.js",
     icon: Boxes,
-    level: 86,
     color: "#e5e5e5",
   },
   {
     name: "Tailwind CSS",
     icon: Palette,
-    level: 93,
     color: "#22d3ee",
   },
   {
     name: "Prisma",
     icon: Layers,
-    level: 80,
     color: "#a78bfa",
   },
   {
     name: "Git",
     icon: GitBranch,
-    level: 90,
     color: "#fb7185",
   },
 ];
@@ -79,40 +69,80 @@ export interface Project {
   title: string;
   description: string;
   tags: string[];
+  image: string;
+  category: string;
+  highlights: string[];
+  frontend: string[];
+  backend: string[];
+  database: string[];
+  authentication: string[];
+  integrations: string[];
   liveUrl: string;
   repoUrl: string;
-  gradient: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "Blood Donation & Emergency Platform",
+    title: "BloodLink",
     description:
-      "A platform connecting blood donors with recipients, featuring emergency request creation, donor availability filtering, location-based searching, and donor management.",
-    tags: ["Next.js", "TypeScript", "Prisma", "Tanstack Query", "Zod", "Shadcn", "Cloudinary", "Nodemailer"],
+      "A community-first platform that helps people find available blood donors, create urgent requests, and discover support by location.",
+    tags: ["Next.js", "TypeScript", "Prisma", "TanStack Query", "Zod"],
+    image: "/projects/bloodlink.svg",
+    category: "Healthcare platform",
+    highlights: [
+      "Find donors by blood group and location",
+      "Create urgent blood donation requests",
+      "Check donor availability",
+    ],
+    frontend: ["Next.js", "React", "TypeScript", "Shadcn UI"],
+    backend: [],
+    database: ["Prisma ORM (database provider not listed)"],
+    authentication: [],
+    integrations: ["TanStack Query", "Zod", "Cloudinary", "Nodemailer"],
     liveUrl: "https://donation-healthcare-frontend.vercel.app/",
     repoUrl: "https://github.com/Md-Rasel-Ahmed/blood-donation-frontend",
-    gradient: "from-cyan-500/20 via-teal-500/10 to-transparent",
   },
   {
     title: "RentNest",
     description:
-      "A house rental platform allowing users to browse property listings, filter by location/budget, manage booking requests, and list rental properties.",
-    tags: ["Next.js", "TypeScript", "Prisma", "Shadcn", "Cloudinary", "Nodemailer"],
+      "A home-rental experience for exploring properties, narrowing down places by location and budget, and managing booking requests.",
+    tags: ["Next.js", "TypeScript", "Prisma", "Shadcn UI", "Cloudinary"],
+    image: "/projects/rentnest.svg",
+    category: "Property discovery",
+    highlights: [
+      "Browse rental property listings",
+      "Filter homes by location and budget",
+      "Manage property booking requests",
+    ],
+    frontend: ["Next.js", "React", "TypeScript", "Shadcn UI"],
+    backend: [],
+    database: ["Prisma ORM (database provider not listed)"],
+    authentication: [],
+    integrations: ["Cloudinary", "Nodemailer"],
     liveUrl: "https://assingment5frontend.vercel.app",
     repoUrl: "https://github.com/Md-Rasel-Ahmed/Rent_nest_fronend_with_nextJS",
-    gradient: "from-violet-500/20 via-purple-500/10 to-transparent",
   },
   {
     title: "Cafe-De Male",
     description:
-      "A restaurant and cafe management website for browsing food items, placing online food orders, viewing menus, and managing reservation details.",
-    tags: ["MERN", "TypeScript", "React", "JWT", "Mongodb", "Express js"],
+      "A restaurant ordering experience for discovering the menu, placing food orders, and keeping track of reservations.",
+    tags: ["React", "TypeScript", "Express", "MongoDB", "JWT"],
+    image: "/projects/cafe-de-male.svg",
+    category: "Restaurant experience",
+    highlights: [
+      "Explore the restaurant menu",
+      "Place food orders online",
+      "View and manage reservation details",
+    ],
+    frontend: ["React", "TypeScript"],
+    backend: ["Node.js", "Express"],
+    database: ["MongoDB"],
+    authentication: ["JWT"],
+    integrations: [],
     liveUrl: "https://cafe-de-male.web.app/",
     repoUrl: "https://github.com/Md-Rasel-Ahmed/cafe-de-male",
-    gradient: "from-pink-500/20 via-rose-500/10 to-transparent",
-  }
-]
+  },
+];
 
 export interface TimelineItem {
   title: string;

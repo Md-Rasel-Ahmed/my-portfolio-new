@@ -6,9 +6,10 @@ import { Moon, Sun, Menu, X } from "lucide-react";
 import { useTheme } from "@/context/ThemeProvider";
 
 const navLinks = [
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
@@ -16,13 +17,34 @@ const navLinks = [
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const sectionIds = navLinks.map(({ href }) => href.slice(1));
+    let frame = 0;
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const marker = window.innerHeight * 0.35;
+        const current = sectionIds.reduce((active, id) => {
+          const section = document.getElementById(id);
+          return section && section.getBoundingClientRect().top <= marker
+            ? id
+            : active;
+        }, sectionIds[0]);
+        setActiveSection(current);
+      });
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
   }, []);
 
   return (
@@ -47,10 +69,23 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="group relative text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
+              aria-current={
+                activeSection === link.href.slice(1) ? "location" : undefined
+              }
+              className={`group relative text-sm font-medium transition-colors hover:text-foreground ${
+                activeSection === link.href.slice(1)
+                  ? "text-foreground"
+                  : "text-foreground/55"
+              }`}
             >
               {link.label}
-              <span className="absolute -bottom-1 left-0 h-0.5 w-0 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500 transition-all duration-300 group-hover:w-full" />
+              <span
+                className={`absolute -bottom-1 left-0 h-0.5 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500 transition-all duration-300 ${
+                  activeSection === link.href.slice(1)
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
+                }`}
+              />
             </a>
           ))}
         </div>
@@ -102,8 +137,20 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground/70 transition-colors hover:bg-white/5 hover:text-foreground"
+                  onClick={() => {
+                    setOpen(false);
+                    setActiveSection(link.href.slice(1));
+                  }}
+                  aria-current={
+                    activeSection === link.href.slice(1)
+                      ? "location"
+                      : undefined
+                  }
+                  className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors hover:bg-white/5 hover:text-foreground ${
+                    activeSection === link.href.slice(1)
+                      ? "bg-white/5 text-foreground"
+                      : "text-foreground/70"
+                  }`}
                 >
                   {link.label}
                 </a>

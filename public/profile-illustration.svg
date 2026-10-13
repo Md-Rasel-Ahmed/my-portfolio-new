@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="630" viewBox="0 0 600 630" fill="none">
+  <defs>
+    <linearGradient id="background" x1="54" y1="32" x2="547" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111B30"/>
+      <stop offset="1" stop-color="#211238"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="185" y1="373" x2="432" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="239" y1="166" x2="372" y2="366" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4C9A8"/>
+      <stop offset="1" stop-color="#D99779"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 265 -265 0 300 306)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="54" y="75" width="492" height="492" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+  </defs>
+  <rect width="600" height="630" rx="34" fill="url(#background)"/>
+  <rect width="600" height="630" rx="34" fill="url(#glow)"/>
+  <circle cx="300" cy="299" r="197" stroke="#A78BFA" stroke-opacity=".16" stroke-width="1.5"/>
+  <circle cx="300" cy="299" r="165" stroke="#67E8F9" stroke-opacity=".1" stroke-width="1.5" stroke-dasharray="5 10"/>
+  <circle cx="300" cy="322" r="116" fill="#8B5CF6" fill-opacity=".28" filter="url(#blur)"/>
+  <path d="M128 630c12-114 74-186 172-186s160 72 172 186H128Z" fill="url(#shirt)"/>
+  <path d="m258 405 42 48 42-48v-63h-84v63Z" fill="url(#skin)"/>
+  <path d="M217 238c0-77 34-123 83-123 57 0 91 44 91 125v47c0 64-40 108-91 108-49 0-83-47-83-108v-49Z" fill="url(#skin)"/>
+  <path d="M216 264c-23-87 11-153 77-171 72-20 133 27 117 112-18-10-31-28-40-52-27 27-81 43-146 42l-8 69Z" fill="#202035"/>
+  <path d="M219 248c-18 5-26 21-20 44 5 19 18 29 31 26l-11-70ZM388 248c18 5 26 21 20 44-5 19-18 29-31 26l11-70Z" fill="#E6AE8D"/>
+  <path d="M263 281h3m70 0h3" stroke="#3B2A32" stroke-linecap="round" stroke-width="8"/>
+  <path d="M282 333c11 9 25 9 36 0" stroke="#9D514D" stroke-linecap="round" stroke-width="5"/>
+  <path d="M204 630c15-73 53-110 96-110l-42-58-50 22-47 146h43ZM396 630c-15-73-53-110-96-110l42-58 50 22 47 146h-43Z" fill="#111827" fill-opacity=".65"/>
+  <path d="M298 511h4l22 41-24 30-24-30 22-41Z" fill="#E0F2FE" fill-opacity=".9"/>
+  <circle cx="107" cy="170" r="4" fill="#67E8F9" fill-opacity=".8"/>
+  <circle cx="489" cy="222" r="5" fill="#C4B5FD" fill-opacity=".8"/>
+  <circle cx="481" cy="462" r="3" fill="#67E8F9" fill-opacity=".8"/>
+  <circle cx="132" cy="440" r="3" fill="#C4B5FD" fill-opacity=".8"/>
+  <path d="m465 118 5 11 11 5-11 5-5 11-5-11-11-5 11-5 5-11Z" fill="#A78BFA" fill-opacity=".8"/>
+  <path d="m123 304 4 8 8 4-8 4-4 8-4-8-8-4 8-4 4-8Z" fill="#67E8F9" fill-opacity=".7"/>
+</svg>
